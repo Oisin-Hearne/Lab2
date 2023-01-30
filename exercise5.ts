@@ -11,8 +11,8 @@ function stringCount(input: string): number {
 function stringCountNoSpace(input: string): number {
     let x: number = 0;
 
-    for(let i = 0; i < input.length; i++)
-        if(input.charAt(i) != " ")
+    for (let i = 0; i < input.length; i++)
+        if (input.charAt(i) != " ")
             x++;
 
     return x;
@@ -24,15 +24,15 @@ function stringCountNoSpace(input: string): number {
 //It'll be undefined if no option value is passed into it.
 function stringCountOption(input: string, option?: boolean): number {
     let x: number = 0;
-    if(option) //Do count spaces
+    if (option) //Do count spaces
     {
         x = input.length;
     }
     else //Don't count spaces
     {
-        for(let i = 0; i < input.length; i++)
-        if(input.charAt(i) != " ")
-            x++;
+        for (let i = 0; i < input.length; i++)
+            if (input.charAt(i) != " ")
+                x++;
     }
 
     return x;
@@ -40,11 +40,11 @@ function stringCountOption(input: string, option?: boolean): number {
 let sampleString: string = "Hello World";
 let choice: boolean = true;
 
-console.log("[Using stringCount] Length of Hello World: "+stringCount(sampleString));
+console.log("[Using stringCount] Length of Hello World: " + stringCount(sampleString));
 
-console.log("[Using stringCountNoSpace] Length of Hello World w/o Spaces: "+stringCountNoSpace(sampleString));
+console.log("[Using stringCountNoSpace] Length of Hello World w/o Spaces: " + stringCountNoSpace(sampleString));
 
-console.log("[Using stringCountOption] Length of Hello World when choice="+choice+": "+stringCountOption(sampleString, choice));
+console.log("[Using stringCountOption] Length of Hello World when choice=" + choice + ": " + stringCountOption(sampleString, choice));
 
 choice = false;
-console.log("[Using stringCountOption] Length of Hello World when choice="+choice+": "+stringCountOption(sampleString, choice));
+console.log("[Using stringCountOption] Length of Hello World when choice=" + choice + ": " + stringCountOption(sampleString, choice));

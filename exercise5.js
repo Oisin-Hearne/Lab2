@@ -30,9 +30,10 @@ function stringCountOption(input, option) {
     }
     return x;
 }
-console.log("[Using stringCount] Length of Hello World: " + stringCount("Hello World"));
-console.log("[Using stringCountNoSpace] Length of Hello World w/o Spaces: " + stringCountNoSpace("Hello World"));
+var sampleString = "Hello World";
 var choice = true;
-console.log("[Using stringCountOption] Length of Hello World when choice=" + choice + ": " + stringCountOption("Hello World", choice));
+console.log("[Using stringCount] Length of Hello World: " + stringCount(sampleString));
+console.log("[Using stringCountNoSpace] Length of Hello World w/o Spaces: " + stringCountNoSpace(sampleString));
+console.log("[Using stringCountOption] Length of Hello World when choice=" + choice + ": " + stringCountOption(sampleString, choice));
 choice = false;
-console.log("[Using stringCountOption] Length of Hello World when choice=" + choice + ": " + stringCountOption("Hello World", choice));
+console.log("[Using stringCountOption] Length of Hello World when choice=" + choice + ": " + stringCountOption(sampleString, choice));
