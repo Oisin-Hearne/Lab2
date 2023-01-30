@@ -23,4 +23,4 @@ console.log("myBool: "+myBool);
 console.log("myNum: "+myNum);
 console.log("myString: "+myString);
 console.log("myArrayofNums: "+myArrayofNums[0] +", "+ myArrayofNums[1] +", "+ myArrayofNums[2]);
-console.log("myTuple: " + myTuple[0] +", "+ myTuple[1])
+console.log("myTuple: " + myTuple[0] + myTuple[1])
