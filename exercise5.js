@@ -30,10 +30,11 @@ function stringCountOption(input, option) {
     }
     return x;
 }
-var sampleString = "Hello World";
+var sampleString = "Test String Please Ignore";
 var choice = true;
-console.log("[Using stringCount] Length of Hello World: " + stringCount(sampleString));
-console.log("[Using stringCountNoSpace] Length of Hello World w/o Spaces: " + stringCountNoSpace(sampleString));
-console.log("[Using stringCountOption] Length of Hello World when choice=" + choice + ": " + stringCountOption(sampleString, choice));
+console.log("[Using stringCount] Length of " + sampleString + ": " + stringCount(sampleString));
+console.log("[Using stringCountNoSpace] Length of " + sampleString + " w/o Spaces: " + stringCountNoSpace(sampleString));
+console.log("[Using stringCountOption] Length of " + sampleString + " when choice=" + choice + ": " + stringCountOption(sampleString, choice));
 choice = false;
-console.log("[Using stringCountOption] Length of Hello World when choice=" + choice + ": " + stringCountOption(sampleString, choice));
+console.log("[Using stringCountOption] Length of " + sampleString + " when choice=" + choice + ": " + stringCountOption(sampleString, choice));
+console.log("[Using stringCountOption] Length of " + sampleString + " when no choice entered: " + stringCountOption(sampleString));
